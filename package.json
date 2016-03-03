@@ -1,0 +1,26 @@
+{
+  "name": "all-files-in-tree",
+  "version": "1.0.0",
+  "description": "Recursively get all files in a directory tree, given the root path (starting point)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luispablo/all-files-in-tree.git"
+  },
+  "keywords": [
+    "files",
+    "tree",
+    "find",
+    "all",
+    "recursive"
+  ],
+  "author": "@luispablo",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/luispablo/all-files-in-tree/issues"
+  },
+  "homepage": "https://github.com/luispablo/all-files-in-tree#readme"
+}
