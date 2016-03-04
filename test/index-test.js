@@ -23,11 +23,19 @@ describe("all-files-in-tree", () => {
 	});
 
 	it("should find a lonley file in single dir", () => {
-		expect(allFilesInTree(PATH2_PATH3)).to.have.length(1);
+		expect(allFilesInTree.sync(PATH2_PATH3)).to.have.length(1);
 	});
 
 	it("should find all files in tree", () => {
-		expect(allFilesInTree(ROOT_PATH)).to.have.length(5);
+		expect(allFilesInTree.sync(ROOT_PATH)).to.have.length(5);
+	});
+
+	it("should find all files, but asynchronous", done => {
+		allFilesInTree.async(ROOT_PATH)
+							.then(files => {
+								expect(files).to.have.length(5);
+								done();
+							});
 	});
 
 	after(() => {
