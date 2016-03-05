@@ -13,8 +13,14 @@ npm install all-files-in-tree
 ```
 var allFilesInTree = require("all-files-in-tree");
 
-var files = allFilesInTree("/home/user/dir");
+// You have the sync version:
+var files = allFilesInTree.sync("/home/user/dir");
 
+// Or the async one:
+allFilesInTree.async("/home/user/dir")
+					.then(function(files) {
+						// do your stuff here
+					});
 ```
 That easy? YES, that's the idea. ;)
 
