@@ -2,6 +2,8 @@
 
 Recursively get all files in a directory tree, given the root path (starting point)
 
+**If you like it, star; if you don't, please tell me why!! :)**
+
 ## Installation
 
 ```
